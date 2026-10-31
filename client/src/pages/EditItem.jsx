@@ -18,7 +18,7 @@ function EditItem() {
     });
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/items/${id}`)
+        fetch(`http://https://campus-resource-hub-api.onrender.com/api/items/${id}`)
             .then((response) => response.json())
             .then((data) => {
                 setForm({
@@ -57,7 +57,7 @@ function EditItem() {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/items/${id}`,
+                `http://https://campus-resource-hub-api.onrender.com/api/items/${id}`,
                 {
                     method: "PUT",
                     headers: {

@@ -15,7 +15,7 @@ function Admin() {
             Authorization: `Bearer ${token}`
         };
 
-        fetch("http://localhost:5000/api/admin/stats", {
+        fetch("http://https://campus-resource-hub-api.onrender.com/api/admin/stats", {
             headers
         })
             .then((response) => response.json())
@@ -28,7 +28,7 @@ function Admin() {
                 console.log(error);
             });
 
-        fetch("http://localhost:5000/api/admin/user-activity", {
+        fetch("http://https://campus-resource-hub-api.onrender.com/api/admin/user-activity", {
             headers
         })
             .then((response) => response.json())
