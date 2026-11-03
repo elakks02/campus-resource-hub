@@ -25,7 +25,7 @@ function AddItem() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/items",
+                "https://campus-resource-hub-api.onrender.com/api/items",
                 {
                     method: "POST",
                     headers: {

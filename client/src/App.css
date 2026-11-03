@@ -3242,3 +3242,428 @@ nav button:hover {
     }
 
 }
+
+/* =========================================
+   CAMPUS RESOURCE HUB - GREEN THEME
+   Add this at the VERY END of App.css
+========================================= */
+
+:root {
+    --primary: #2f7d4a;
+    --primary-dark: #205c36;
+    --primary-deep: #174d32;
+    --primary-light: #eaf4ec;
+    --primary-soft: #f6faf6;
+    --text-dark: #202b23;
+    --text-muted: #718075;
+    --border-green: #dce9df;
+}
+
+/* GLOBAL */
+
+body {
+    background: var(--primary-soft);
+    color: var(--text-dark);
+}
+
+::selection {
+    background: #cce5d1;
+    color: var(--primary-deep);
+}
+
+/* NAVBAR */
+
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-green);
+}
+
+nav h2,
+nav a:hover {
+    color: var(--primary);
+}
+
+nav button {
+    background: var(--primary);
+}
+
+nav button:hover {
+    background: var(--primary-dark);
+}
+
+/* HOME PAGE */
+
+.home {
+    background: var(--primary-soft);
+}
+
+.home-hero {
+    background: linear-gradient(135deg, #f1f8f2, #ffffff);
+}
+
+.home-hero h1 span,
+.hero-content h1 span {
+    color: var(--primary);
+}
+
+.hero-badge {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.hero-buttons button,
+.home-cta button,
+.why-content button {
+    background: var(--primary);
+}
+
+.hero-buttons button:hover,
+.home-cta button:hover,
+.why-content button:hover {
+    box-shadow: 0 12px 25px rgba(47, 125, 74, 0.2);
+}
+
+.hero-secondary {
+    color: var(--primary-dark) !important;
+    border-color: var(--border-green) !important;
+}
+
+.hero-secondary:hover {
+    background: var(--primary-light) !important;
+}
+
+.hero-glow,
+.circle-one {
+    background: #dceede;
+}
+
+.circle-two {
+    background: #e6f2e7;
+}
+
+.circle-three {
+    border-color: #dceede;
+}
+
+.resource-circle {
+    background: var(--primary);
+    box-shadow: 0 30px 70px rgba(47, 125, 74, 0.25);
+}
+
+.floating-icon {
+    background: var(--primary-light);
+}
+
+/* HOME STATS */
+
+.home-stats {
+    background: var(--primary-deep);
+}
+
+.stat-box:hover {
+    background: #205c36;
+}
+
+.stat-box span {
+    color: #a9d6b3;
+}
+
+/* RESOURCE CARDS */
+
+.sell-card {
+    background: #eaf4ec;
+}
+
+.donate-card {
+    background: #f0f6e9;
+}
+
+.resource-card button {
+    color: var(--primary);
+}
+
+/* SECTION LABELS */
+
+.section-label,
+.tagline,
+.step-number {
+    color: var(--primary);
+}
+
+.section-heading h2 span,
+.why-content h2 span,
+.home-cta h2 span {
+    color: #5b9d6c;
+}
+
+/* WHY SECTION */
+
+.why-section {
+    background: var(--primary-deep);
+}
+
+.why-grid span,
+.why-grid div > span,
+.step span {
+    color: #a9d6b3;
+}
+
+.why-grid div {
+    border-color: rgba(255,255,255,0.18);
+}
+
+/* HOW IT WORKS */
+
+.step {
+    border-top-color: var(--primary);
+}
+
+.step-icon {
+    background: var(--primary-light);
+}
+
+/* CTA */
+
+.home-cta {
+    background: linear-gradient(135deg, #174d32, #286b41);
+}
+
+.home-cta .section-label {
+    color: #b6e1bf;
+}
+
+/* AUTHENTICATION */
+
+.auth-page,
+.profile-page,
+.add-item-page {
+    background: var(--primary-soft);
+}
+
+.auth-box input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(47,125,74,0.12);
+}
+
+.auth-box button,
+.list-item-button {
+    background: var(--primary);
+}
+
+.auth-box button:hover,
+.list-item-button:hover {
+    background: var(--primary-dark);
+}
+
+/* PROFILE */
+
+.profile-avatar {
+    background: var(--primary);
+}
+
+.profile-header span,
+.profile-stats strong {
+    color: var(--primary);
+}
+
+.profile-info p,
+.admin-activity-section {
+    background: var(--primary-soft);
+}
+
+.profile-item-icon,
+.request-icon {
+    background: var(--primary-light);
+}
+
+.accept-button {
+    background: var(--primary);
+}
+
+.accept-button:hover {
+    background: var(--primary-dark);
+}
+
+.status.available,
+.status.purchased {
+    background: #e3f3e6;
+    color: #267344;
+}
+
+.status.sold {
+    background: #eaf4ec;
+    color: var(--primary-dark);
+}
+
+/* MARKETPLACE */
+
+.items-page {
+    background: var(--primary-soft);
+}
+
+.marketplace-hero {
+    background: var(--primary-deep);
+}
+
+.marketplace-hero h1 span {
+    color: #a9d6b3;
+}
+
+.marketplace-top input:focus {
+    border-color: var(--primary);
+}
+
+.filter:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.filter.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.item-image {
+    background: var(--primary-light);
+}
+
+.item-type {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.item-footer button {
+    color: var(--primary);
+}
+
+/* ADD ITEM */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(47,125,74,0.12);
+}
+
+/* COLLEGE SELECTION */
+
+.college-page {
+    background: #102e20;
+}
+
+.college-background {
+    background: radial-gradient(
+        circle,
+        rgba(91, 157, 108, 0.4),
+        transparent 65%
+    );
+}
+
+.college-background::after {
+    background: radial-gradient(
+        circle,
+        rgba(47, 125, 74, 0.3),
+        transparent 65%
+    );
+}
+
+.college-card .section-label,
+.college-card h1 span,
+.back-link {
+    color: #a9d6b3 !important;
+}
+
+.college-card select:focus {
+    border-color: #78b88a;
+}
+
+.college-card button {
+    background: var(--primary);
+    color: white;
+}
+
+.college-card button:hover {
+    background: var(--primary-dark);
+}
+
+/* ADMIN */
+
+.admin-page {
+    background: var(--primary-soft);
+}
+
+.admin-user-avatar {
+    background: var(--primary);
+}
+
+.admin-user-info span {
+    color: var(--primary);
+}
+
+.admin-section-heading > span,
+.activity-title span {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.activity-status.sold {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+/* ITEM DETAILS */
+
+.item-details-page {
+    background: var(--primary-soft);
+}
+
+.back-button:hover {
+    background: var(--primary-light);
+}
+
+.item-details-image {
+    background: var(--primary-light);
+}
+
+.item-details-content .item-type {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+.request-button {
+    background: var(--primary);
+}
+
+.request-button:hover {
+    background: var(--primary-dark);
+}
+
+/* GENERAL FORM FOCUS */
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-color: var(--primary);
+}
+
+/* CONSISTENT TRANSITIONS */
+
+button,
+a,
+.filter,
+.item-card,
+.resource-card,
+.why-card {
+    transition: all 0.25s ease;
+}
+
+/* ACCESSIBILITY */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
