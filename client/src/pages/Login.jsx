@@ -11,7 +11,7 @@ function Login() {
         e.preventDefault();
 
         const response = await fetch(
-            "http://https://campus-resource-hub-api.onrender.com/api/users/login",
+            "https://campus-resource-hub-api.onrender.com/api/users/login",
             {
                 method: "POST",
                 headers: {

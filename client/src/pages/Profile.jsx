@@ -15,21 +15,21 @@ function Profile() {
             };
 
             const itemsResponse = await fetch(
-                "http://https://campus-resource-hub-api.onrender.com/api/items/mine",
+                "https://campus-resource-hub-api.onrender.com/api/items/mine",
                 { headers }
             );
 
             const itemsData = await itemsResponse.json();
 
             const buyerResponse = await fetch(
-                "http://https://campus-resource-hub-api.onrender.com/api/requests/buyer",
+                "https://campus-resource-hub-api.onrender.com/api/requests/buyer",
                 { headers }
             );
 
             const buyerData = await buyerResponse.json();
 
             const sellerResponse = await fetch(
-                "http://https://campus-resource-hub-api.onrender.com/api/requests/seller",
+                "https://campus-resource-hub-api.onrender.com/api/requests/seller",
                 { headers }
             );
 
@@ -51,7 +51,7 @@ function Profile() {
     const handleAccept = async (id) => {
         try {
             const response = await fetch(
-                `http://https://campus-resource-hub-api.onrender.com/api/requests/${id}/accept`,
+                `https://campus-resource-hub-api.onrender.com/api/requests/${id}/accept`,
                 {
                     method: "PATCH",
                     headers: {
@@ -77,7 +77,7 @@ function Profile() {
     const handleReject = async (id) => {
         try {
             const response = await fetch(
-                `http://https://campus-resource-hub-api.onrender.com/api/requests/${id}/reject`,
+                `https://campus-resource-hub-api.onrender.com/api/requests/${id}/reject`,
                 {
                     method: "PATCH",
                     headers: {

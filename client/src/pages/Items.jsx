@@ -11,7 +11,7 @@ function Items() {
 
     useEffect(() => {
 
-        fetch("http://https://campus-resource-hub-api.onrender.com/api/items")
+        fetch("https://campus-resource-hub-api.onrender.com/api/items")
             .then((response) => response.json())
             .then((data) => setItems(data))
             .catch((error) => console.log(error));

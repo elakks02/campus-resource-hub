@@ -13,7 +13,7 @@ function ItemDetails() {
     const token = localStorage.getItem("token");
 
     useEffect(() => {
-        fetch(`http://https://campus-resource-hub-api.onrender.com/api/items/${id}`)
+        fetch(`https://campus-resource-hub-api.onrender.com/api/items/${id}`)
             .then((response) => response.json())
             .then((data) => setItem(data))
             .catch((error) => console.log(error));
@@ -29,7 +29,7 @@ function ItemDetails() {
 
         try {
             const response = await fetch(
-                "http://https://campus-resource-hub-api.onrender.com/api/requests",
+                "https://campus-resource-hub-api.onrender.com/api/requests",
                 {
                     method: "POST",
                     headers: {
@@ -67,7 +67,7 @@ function ItemDetails() {
 
         try {
             const response = await fetch(
-                `http://https://campus-resource-hub-api.onrender.com/api/items/${id}`,
+                `https://campus-resource-hub-api.onrender.com/api/items/${id}`,
                 {
                     method: "DELETE",
                     headers: {

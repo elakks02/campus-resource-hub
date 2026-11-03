@@ -24,7 +24,7 @@ function Signup() {
         e.preventDefault();
 
         const response = await fetch(
-            "http://https://campus-resource-hub-api.onrender.com/api/users/signup",
+            "https://campus-resource-hub-api.onrender.com/api/users/signup",
             {
                 method: "POST",
                 headers: {
